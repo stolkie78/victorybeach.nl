@@ -53,6 +53,8 @@ section>div {
     width: 100%;
 }
 
+
+
 .banner {
     position: fixed;
     top: 0;
@@ -232,7 +234,30 @@ p {
     font-size: 1rem;
     font-weight: bold;
     border-radius: 5px;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    border: 2px solid black; /* Zorgt ervoor dat de knop nog zichtbaar is bij lichte achtergrond */
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+    text-align: center;
+    user-select: none;
+}
+
+/* Hover-effect voor betere gebruikerservaring */
+.black-button:hover {
+    background-color: #333; /* Donkerder grijs voor subtiele hover */
+    color: #fff;
+    transform: scale(1.05); /* Klein beetje vergroting voor interactief effect */
+}
+
+/* Actieve staat voor klikgevoel */
+.black-button:active {
+    transform: scale(0.95);
+    background-color: #222;
+}
+
+/* Toegankelijkheid: focus-stijlen voor toetsenbordnavigatie */
+.black-button:focus {
+    outline: 3px solid white;
+    outline-offset: 2px;
 }
 
 .email-button:hover {
@@ -247,6 +272,25 @@ p {
     height: auto;
     max-height: 350px;
     /* Maximale grootte van 300px */
+    border-radius: 40px;
+    border: 0px solid black;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.clothing-container {
+    display: flex;
+    justify-content: center; /* Centreert de afbeeldingen */
+    flex-wrap: wrap; /* Zorgt ervoor dat ze doorbreken naar een nieuwe regel als er niet genoeg ruimte is */
+    gap: 15px; /* Ruimte tussen de afbeeldingen */
+    margin-top: 15px; /* Optionele extra marge */
+}
+
+.clothing {
+    display: flex;
+    margin: 5px auto;
+    max-width: 150px;
+    height: auto;
+    max-height: 150px;
     border-radius: 40px;
     border: 0px solid black;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
