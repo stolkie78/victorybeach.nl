@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Zovoc Beach - ViBeS - Beachvolleybal Community</title>
+</head>
+<body>
+    <div class="banner">
+        <img src="images/header.png" alt="Zovoc Beach" class="logo">
+    </div>
+    <div class="container">
+        
+        <section id="welcome">
+            <div>
+                <div class="section-header">Welkom bij Zovoc Beach powered by Vibes</div>
+                <p>
+                    ViBeS staat voor <b>Vi</b>ctory <b>Be</b>achvolleybal <b>S</b>chool en naast het talentenprogramma verzorgen we ook komende 
+                    seizoen de beachvolleybal trainingen bij <b>Zovoc Beach</b> in Zoetermeer. Dit is een samenwerking tussen Zovoc en ViBeS. En hier zijn we trots op!    
+                </p>
+                <p>
+                    Net als vorig jaar zal Zovoc weer een zomerprogramma aanbieden voor de jeugd. Dit programma is voor jongens en meisjes in de leeftijd van 6 t/m 18 jaar. 
+                    <br> We hebben ook dit keer weer leuke jonge trainsters en trainers die er nu
+                    al weer zin in hebben om jullie te de fijne keepjes van het beachvolleybal te leren.   
+                    </p>
+                <p>
+                    <img src="../images/ZovocBeachImage1.png" alt="Zovoc Beach" class="photo">
+                </p>
+                <h3><u>Waarom Beachvolleybal?</u></h3>
+                <p>
+                    <b>Beachvolleybal is niet zomaar een sport – het is een avontuur op het zand!</b> <br>
+                    Wil jij sneller, sterker en slimmer worden op het veld? Met uitdagende trainingen en spannende wedstrijden krijg je de kans om jezelf te ontwikkelen en je skills naar het volgende niveau te tillen.
+                    <br><br>
+                    🏆 Speel, groei en verbeter!
+                    Onder begeleiding van toptrainers leer je alles over techniek, tactiek en teamwork. Of je nu net begint of al ervaring hebt, er is altijd een nieuwe uitdaging om aan te gaan.
+                    <br><br>
+                    🔥 Meer dan een sport!
+                    Beachvolleybal draait om plezier, snelheid en actie. Met zon op je gezicht en zand onder je voeten werk je aan je conditie, uithoudingsvermogen en explosiviteit – terwijl je geniet van elke wedstrijd!
+                    <br><br>
+                    Ben jij klaar om de uitdaging aan te gaan? 💪😃🏐
+                </p>
+                <a href="#inschrijven" class="click-button">Naar inschrijven</a>
+            </div>
+        </section>
+        
+        <section id="info">
+        <div>
+        <div class="section-header">Zomer Programma 2025</div>
+            <p>
+                De Trainingen zijn op woensdag en vrijdag vanaf en dan 10 weken</b>
+            </p>
+            <h3><u>Trainingsgroepen</u></h3>
+            We gaan op basis van de inschrijvingen weer groepjes maken. Hieronder staan de trainings blokken.<br>
+            We proberen de groep maximaal 8 kinderen te houden. Dit is een leuke verhouding tussen actief en gezellig.
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Categorie</th>
+                        <th>Tijden</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Jeugd ABC - Blok 1</td>
+                        <td>Woensdag 17:00-18:30</td>
+                    </tr>
+                    <tr>
+                        <td>Jeugd ABC - Blok 2</td>
+                        <td>Woensdag 17:00-18:30</td>
+                    </tr>
+                    <tr>
+                        <td>Jeugd CMV</td>
+                        <td>Vrijdag 18:30-20:00</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3><u>Kosten</u></h3>
+            <p>
+                De kosten zijn: <br>   
+                    Jeugd ABC - <b>€60</b> en Jeugd CMV - <b>€40</b>
+
+            </p>
+            <h3><u>Locatie</u></h3>
+            <p>
+                Zovoc Beach, Buytenparklaan 9, 2717 AX Zoetermeer, Nederland
+            </p>
+    
+            <h3><u>Weersomstandigheden</u></h3>
+            <p>
+                Houd er rekening mee dat trainingen niet worden ingehaald bij uitval door slecht weer.
+                We streven ernaar om het maximale uit onze geplande trainingsmomenten te halen, maar omstandigheden zoals
+                regen of storm kunnen invloed hebben op de planning.
+            </p>
+
+            <h3><u>Contact</u></h3>
+                <p>
+                    Voor informatie kunt je altijd contact via onderstaande links.
+                </p>
+
+        </div>
+        <a href="#inschrijven" class="click-button">Naar inschrijven</a>
+        </section>
+
+        <section id="inschrijven">
+            <div class="section-header">Schrijf je nu in!</div>
+            <div class="section-content">
+                <p>
+                    Wil je meedoen met ViBeS en deel uitmaken van onze inspirerende beachvolleybalcommunity?<br>
+                    <br>Neem contact met ons op om je aan te melden. Gebruik het Google form in onderstaande link!
+                </p>
+                <a href="#info" class="click-button">Informatie</a>
+                <a href="https://zovoc.nl/UITbetaalformulier-beachtrainingenUIT/" class="click-button" target="_blank" rel="noopener noreferrer">Schrijf je hier in</a>
+            </div>
+            <div>
+                <img src="images/BeachSmiley.png" alt="Let's Go!"
+                style="max-width: 200px; padding-top: 20px; height: auto;">
+            </div>
+            <br><br><br>
+        </section>
+        
+    <img src="images/NextPageIconYellow.png" alt="Next Page Icon" class="next-page-icon" onclick="goToNextSection()">
+
+<script>
+    let currentIndex = 0;
+
+    function goToNextSection() {
+        const sections = document.querySelectorAll('section');
+        if (currentIndex < sections.length - 1) {
+            currentIndex++;
+        } else {
+            currentIndex = 0; // Terug naar de eerste sectie als je het einde bereikt
+        }
+
+        // Scroll naar de volgende sectie
+        sections[currentIndex].scrollIntoView({ behavior: 'smooth' });
+
+        // Update de URL met de ID van de huidige sectie
+        const currentSectionId = sections[currentIndex].id;
+        if (currentSectionId) {
+            history.pushState(null, null, `#${currentSectionId}`);
+        }
+    }
+
+    // Zorg ervoor dat de juiste sectie wordt weergegeven als de pagina wordt geladen met een hash
+    window.addEventListener('load', () => {
+        const hash = window.location.hash;
+        if (hash) {
+            const targetSection = document.querySelector(hash);
+            if (targetSection) {
+                targetSection.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    });
+</script>
+    <script>
+        function updateSectionPadding() {
+            const banner = document.querySelector('.banner');
+            const root = document.documentElement;
+
+            // Stel de CSS-variabele in op basis van de hoogte van de banner
+            if (banner) {
+                const bannerHeight = banner.offsetHeight + 'px';
+                root.style.setProperty('--banner-height', bannerHeight);
+            }
+        }
+
+        // Roep de functie aan bij het laden van de pagina en bij resizes
+        window.addEventListener('load', updateSectionPadding);
+        window.addEventListener('resize', updateSectionPadding);
+    </script>
+
+</body>
+
+</html>
