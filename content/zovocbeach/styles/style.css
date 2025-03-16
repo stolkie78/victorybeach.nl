@@ -213,20 +213,31 @@ p {
 .click-button {
     display: inline-block;
     margin-top: 15px;
-    padding: 14px 24px;
+    padding: 18px 36px; /* Meer ruimte voor grotere tekst */
     background-color: rgb(3, 46, 90);
     color: white;
     text-decoration: none;
-    font-size: 1.15rem; /* Iets groter lettertype */
+    font-size: clamp(1.3rem, 3vw, 2rem); /* Schaalbare tekst */
     font-weight: bold;
-    border-radius: 5px;
+    border-radius: 8px;
     border: 2px solid #dc0a2d;
     transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
     cursor: pointer;
     text-align: center;
     user-select: none;
-    white-space: nowrap; /* <<< voorkomt afbreken van tekst */
-    line-height: 1.4; /* iets luchtiger voor grotere tekst */
+    white-space: nowrap; /* Geen tekstafbreking */
+    line-height: 1.4;
+    min-width: 200px;
+    max-width: 100%;
+}
+
+/* Mobielvriendelijke knop */
+@media (max-width: 480px) {
+    .click-button {
+        font-size: 1.2rem; /* Iets kleiner op heel kleine schermen */
+        padding: 14px 24px;
+        min-width: 160px;
+    }
 }
 
 /* Hover-effect voor betere gebruikerservaring */
