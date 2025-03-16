@@ -68,7 +68,7 @@ section>div {
 }
 
 .banner img.logo {
-    width: 60%;
+    width: 40%;
     /* Laat het logo flexibel zijn, schaal afhankelijk van de container */
     max-width: 550px;
     /* Maximale breedte op grote schermen */
