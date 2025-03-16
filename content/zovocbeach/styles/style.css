@@ -68,7 +68,7 @@ section>div {
 }
 
 .banner img.logo {
-    width: 40%;
+    width: 60%;
     /* Laat het logo flexibel zijn, schaal afhankelijk van de container */
     max-width: 550px;
     /* Maximale breedte op grote schermen */
@@ -213,18 +213,20 @@ p {
 .click-button {
     display: inline-block;
     margin-top: 15px;
-    padding: 12px 20px;
-    background-color: rgb(3, 46, 90);;
+    padding: 14px 24px;
+    background-color: rgb(3, 46, 90);
     color: white;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 1.15rem; /* Iets groter lettertype */
     font-weight: bold;
     border-radius: 5px;
-    border: 2px solid #dc0a2d; /* Zorgt ervoor dat de knop nog zichtbaar is bij lichte achtergrond */
+    border: 2px solid #dc0a2d;
     transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
     cursor: pointer;
     text-align: center;
     user-select: none;
+    white-space: nowrap; /* <<< voorkomt afbreken van tekst */
+    line-height: 1.4; /* iets luchtiger voor grotere tekst */
 }
 
 /* Hover-effect voor betere gebruikerservaring */
