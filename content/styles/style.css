@@ -215,13 +215,14 @@ p {
     text-align: center;
     padding: 10px 20px;
     /* Uniforme padding */
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     z-index: 1;
     box-sizing: border-box;
     margin: 0;
     /* Geen extra marge toevoegen */
     width: 100%;
     font-style: italic;
+    border-radius: 20px;
 }
 
 .click-button {
@@ -234,7 +235,7 @@ p {
     font-size: 1.5rem; /* Kleiner op desktop */
     font-weight: bold;
     border-radius: 8px;
-    border: 2px solid #000000;
+    border: 2px solid #ffffff;
     transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
     cursor: pointer;
     text-align: center;
@@ -265,7 +266,7 @@ p {
 /* Actieve staat voor klikgevoel */
 .click-button:active {
     transform: scale(0.95);
-    background-color: #222;
+    background-color: #222222;
 }
 
 /* Toegankelijkheid: focus-stijlen voor toetsenbordnavigatie */
