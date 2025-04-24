@@ -208,7 +208,30 @@ p {
     /* Geen extra marge toevoegen */
     width: 100%;
     font-style: italic;
+    border-radius: 8px;
 }
+
+.sub-header {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 24px; /* Iets compacter op desktop */
+    background-color: #dc0a2d;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem; /* Kleiner op desktop */
+    font-weight: bold;
+    border-radius: 8px;
+    border: 2px solid #dc0a2d;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+    text-align: center;
+    user-select: none;
+    white-space: nowrap;
+    line-height: 1.4;
+    min-width: 200px;
+    max-width: 100%;
+}
+
 
 .click-button {
     display: inline-block;
