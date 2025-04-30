@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Zovoc Beach - ViBeS - Beachvolleybal Community</title>
+</head>
+<body>
+    <div class="banner">
+        <img src="images/header.png" alt="Zovoc Beach" class="logo">
+    </div>
+    <div class="container">
+
+      <section id="nieuws">
+        <div>
+            <div class="sub-header">LAATSTE NIEUWS</a></div><hr>
+            <p><b>AANGEPASTE TIJDEN OP WOENSDAG</b> <br>
+            Omdat heel veel mensen 15:30 te vroeg vinden op woensdag, hebben we de tijden aangepast.<br>
+            <b>Blok 1:16:30-18:00 en Blok 2:18:00-19:30</b></p><hr>
+            <p><b>CONCEPT INDELINGEN</b><br>
+              <a href="files/woensdag-overzicht.html" target="_blank" rel="noopener noreferrer">Woensdag ABC indeling</a><br>
+              <a href="files/vrijdag-overzicht.html" target="_blank" rel="noopener noreferrer">Vrijdag CMV indeling</a><br>
+            
+    </section>
+    <img src="images/NextPageIconYellow.png" alt="Next Page Icon" class="next-page-icon" onclick="goToNextSection()">
+
+<script>
+    let currentIndex = 0;
+
+    function goToNextSection() {
+        const sections = document.querySelectorAll('section');
+        if (currentIndex < sections.length - 1) {
+            currentIndex++;
+        } else {
+            currentIndex = 0; // Terug naar de eerste sectie als je het einde bereikt
+        }
+
+        // Scroll naar de volgende sectie
+        sections[currentIndex].scrollIntoView({ behavior: 'smooth' });
+
+        // Update de URL met de ID van de huidige sectie
+        const currentSectionId = sections[currentIndex].id;
+        if (currentSectionId) {
+            history.pushState(null, null, `#${currentSectionId}`);
+        }
+    }
+
+    // Zorg ervoor dat de juiste sectie wordt weergegeven als de pagina wordt geladen met een hash
+    window.addEventListener('load', () => {
+        const hash = window.location.hash;
+        if (hash) {
+            const targetSection = document.querySelector(hash);
+            if (targetSection) {
+                targetSection.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    });
+</script>
+    <script>
+        function updateSectionPadding() {
+            const banner = document.querySelector('.banner');
+            const root = document.documentElement;
+
+            // Stel de CSS-variabele in op basis van de hoogte van de banner
+            if (banner) {
+                const bannerHeight = banner.offsetHeight + 'px';
+                root.style.setProperty('--banner-height', bannerHeight);
+            }
+        }
+
+        // Roep de functie aan bij het laden van de pagina en bij resizes
+        window.addEventListener('load', updateSectionPadding);
+        window.addEventListener('resize', updateSectionPadding);
+    </script>
+
+</body>
+
+</html>
